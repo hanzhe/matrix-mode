@@ -1,6 +1,7 @@
 # Matrix mode
 
 The green code rain from *The Matrix* on the **Nokia 8110 4G** (KaiOS 2.5 / GerdaOS).
+
 ![Matrix mode](app/icons/icon112x112.png)
 
 ## What it does
