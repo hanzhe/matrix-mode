@@ -1,0 +1,29 @@
+{
+  "name": "Matrix mode",
+  "version": "1.0.0",
+  "description": "The green code rain from The Matrix, plus a few scenes from the film.",
+  "launch_path": "/index.html",
+  "type": "privileged",
+  "origin": "app://matrixmode.hanzhe.dev",
+  "default_locale": "en-US",
+  "categories": ["entertainment"],
+  "fullscreen": true,
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "icons": {
+    "56": "/icons/icon56x56.png",
+    "112": "/icons/icon112x112.png"
+  },
+  "developer": {
+    "name": "hanzhe"
+  },
+  "permissions": {},
+  "locales": {
+    "en-US": {
+      "name": "Matrix mode",
+      "subtitle": "Follow the white rabbit",
+      "description": "The green code rain from The Matrix."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+html, body { margin: 0; padding: 0; height: 100%; background: #000; overflow: hidden; }
+[hidden] { display: none !important; }
+#rain { position: fixed; top: 0; left: 0; width: 240px; height: 320px; }
+
+/* Neo's terminal: green phosphor text with a soft glow and a block cursor */
+#scene { position: fixed; top: 0; left: 0; width: 240px; height: 320px; background: #000; color: #4cff6a;
+         font: 16px/1.35 "Droid Sans Mono", "DejaVu Sans Mono", monospace;
+         text-shadow: 0 0 3px rgba(40, 255, 80, 0.75), 0 0 9px rgba(0, 200, 50, 0.45); }
+#scene .text { position: absolute; top: 12px; left: 10px; right: 10px; }
+#scene .line { min-height: 1.35em; word-wrap: break-word; }
+#scene .cursor { display: inline-block; width: 0.6em; height: 1.05em; margin-left: 1px; vertical-align: -0.15em;
+                 background: #4cff6a; box-shadow: 0 0 6px rgba(40, 255, 80, 0.8); }
+
+.scene-trace .text { font-size: 11px; line-height: 1.4; }
+#scene .number { position: absolute; top: 140px; left: 0; right: 0; text-align: center; font-size: 25px;
+                 letter-spacing: 1px; color: #b8ffc4; }
+
+.scene-call .text { font-size: 15px; }
+
+/* Incoming call */
+.scene-ringing { text-align: center; }
+#scene .call-label { margin-top: 18px; font-size: 13px; opacity: 0.8; }
+#scene .call-name { margin-top: 60px; font-size: 28px; color: #b8ffc4; animation: pulse 1.2s ease-in-out infinite alternate; }
+#scene .call-soft { position: absolute; left: 0; right: 0; bottom: 0; height: 26px; line-height: 26px; font-size: 14px; }
+#scene .call-answer { position: absolute; left: 8px; }
+#scene .call-reject { position: absolute; right: 8px; }
+@keyframes pulse { from { opacity: 1; } to { opacity: 0.45; } }
+
+#hint { position: fixed; left: 6px; bottom: 6px; padding: 4px 7px; background: rgba(0, 0, 0, 0.8); color: #4cff6a;
+        font: 13px/1.4 "Droid Sans Mono", monospace; border: 1px solid rgba(76, 255, 106, 0.35); }
